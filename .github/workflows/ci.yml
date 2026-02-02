@@ -15,5 +15,11 @@ jobs:
       - name: Verify governance and docs
         run: ./scripts/ci/verify.sh
 
+      - name: Lint
+        run: ./scripts/ci/lint.sh
+
       - name: Run test automation
         run: ./scripts/test/run.sh
+
+      - name: Coverage
+        run: ./scripts/test/coverage.sh

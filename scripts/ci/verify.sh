@@ -9,6 +9,11 @@ required_files=(
   "docs/workflows/REQUEST_FLOW.md"
   "docs/merge/MERGE_POLICY.md"
   "docs/testing/TEST_AUTOMATION.md"
+  "docs/testing/STACK_TOOLING.md"
+  "docs/testing/COVERAGE_POLICY.md"
+  "scripts/ci/lint.sh"
+  "scripts/test/run.sh"
+  "scripts/test/coverage.sh"
 )
 
 for file in "${required_files[@]}"; do

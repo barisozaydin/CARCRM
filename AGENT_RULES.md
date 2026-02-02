@@ -50,6 +50,7 @@ kalitede ve denetlenebilir kod üretimini garantilemektir.
 - **Test giriş noktası**: Tek komutla tüm testler çalıştırılır.
 - **Test raporu**: CI çıktısına test sonuçları eklenir.
 - **Regresyon kontrolü**: Kritik akışlar için otomatik test zorunlu.
+- **Stack uyumu**: Kullanılan teknolojiye uygun test/lint/coverage araçları seçilir.
 
 ## 9) Uygulama (Enforcement) Mekanizmaları
 - **CI/CD Pipeline**: Lint, test, SAST ve coverage gate zorunlu.
