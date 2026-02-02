@@ -30,23 +30,33 @@ kalitede ve denetlenebilir kod üretimini garantilemektir.
 - **Static Analysis**: SAST, lint, dependency scanning.
 - **Coverage Gate**: Minimum coverage eşiği (ör. %80) altında merge yok.
 
-## 5) Güvenlik ve Uyumluluk
+## 5) Merge ve Paralel Çalışma Kuralları
+- **Branch politikası**: Her değişiklik için ayrı branch.
+- **Çatışma çözümü**: Otomatik conflict çözümü yapılmaz, manuel açıklama şart.
+- **Paralel agent**: Aynı modülde çalışan agent'lar dosya sahipliği belirler.
+- **Riskli merge**: Kritik modüllerde ikinci review zorunlu.
+
+## 6) Güvenlik ve Uyumluluk
 - **Threat modeling**: Yeni modül/servis için zorunlu.
 - **Data minimization**: Sadece gerekli veri tutulur.
 - **Encryption**: At-rest/in-transit şifreleme zorunlu.
 
-## 6) AI Agent Davranış Kuralları
+## 7) AI Agent Davranış Kuralları
 - **Rol dışı iş yapma yok**: Agent sadece kendi skill kapsamındaki işleri yapar.
 - **Kural dışı değişiklik yok**: Bu dokümana aykırı değişiklik yapılmaz.
 - **Belirsizlikte durdur**: Gereksinim net değilse varsayım yerine soru sor.
 
-## 7) Uygulama (Enforcement) Mekanizmaları
+## 8) Test Otomasyonu Gereklilikleri
+- **Test giriş noktası**: Tek komutla tüm testler çalıştırılır.
+- **Test raporu**: CI çıktısına test sonuçları eklenir.
+- **Regresyon kontrolü**: Kritik akışlar için otomatik test zorunlu.
+
+## 9) Uygulama (Enforcement) Mekanizmaları
 - **CI/CD Pipeline**: Lint, test, SAST ve coverage gate zorunlu.
 - **Policy as Code**: Kuralların otomatik denetlenmesi (ör. Open Policy Agent).
 - **Pre-commit Hooks**: Yerel doğrulama zorunlu.
 - **Code Review Checklists**: PR şablonunda otomatik kontrol listesi.
 
-## 8) Sürümleme ve Denetim
+## 10) Sürümleme ve Denetim
 - Bu dosya değişiklikleri **audit log** olarak saklanır.
 - Her revizyon için gerekçe ve onay kaydı gereklidir.
-

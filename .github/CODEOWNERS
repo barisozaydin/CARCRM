@@ -1,0 +1,6 @@
+# Governance ownership
+/AGENT_RULES.md @architecture-owner
+/docs/ @documentation-owner
+/.github/ @devops-owner
+/scripts/ @devops-owner
+/tests/ @qa-owner
