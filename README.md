@@ -1,5 +1,8 @@
 # CARCRM
 
+## Kurulum ve Başlangıç
+- GitHub Desktop ile kullanım: `docs/setup/GITHUB_DESKTOP_KURULUM.md`
+
 ## Governance & Workflow
 - Rules: `AGENT_RULES.md`
 - Request flow: `docs/workflows/REQUEST_FLOW.md`
